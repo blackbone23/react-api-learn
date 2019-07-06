@@ -7,6 +7,7 @@ import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop'
 import Users from './components/Users';
 import Products from './components/Products';
+import Home from './components/Home';
 
 class App extends Component{
 
@@ -39,6 +40,7 @@ class App extends Component{
         <main style={{marginTop: '64px'}}>
           <p>This is the page content!</p>
             <Switch>
+              <Route path="/" exact component={Home} />
               <Route path="/products" exact component={Products} />
               <Route path="/users" exact component={Users} />
             </Switch>
