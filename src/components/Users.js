@@ -5,8 +5,7 @@ class Users extends Component {
         super(props)
     
         this.state = {
-             items: [],
-             errorMsg: ''
+             items: []
         }
     }
 
@@ -23,7 +22,7 @@ class Users extends Component {
      }
     
     render() {
-        const {items, errorMsg} = this.state
+        const {items} = this.state
         return (
             <div>
                 <ul>

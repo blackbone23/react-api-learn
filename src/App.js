@@ -8,6 +8,7 @@ import Backdrop from './components/Backdrop/Backdrop'
 import Users from './components/Users';
 import Products from './components/Products';
 import Home from './components/Home';
+import FormPost from './components/FormPost';
 
 class App extends Component{
 
@@ -43,6 +44,7 @@ class App extends Component{
               <Route path="/" exact component={Home} />
               <Route path="/products" exact component={Products} />
               <Route path="/users" exact component={Users} />
+              <Route path="/form" exact component={FormPost} />
             </Switch>
           
         </main>
